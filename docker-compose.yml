@@ -1,0 +1,14 @@
+# docker-compose manifest for local development
+
+# Build with `docker-compose build`
+
+# Bring up with `docker-compose up`
+
+version: '2'
+services:
+  cra-env-vars:
+    build: .
+    ports:
+     - "8080:80"
+    # volumes:
+    #  - ./app:/usr/src/app
